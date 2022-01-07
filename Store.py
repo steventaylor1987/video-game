@@ -356,14 +356,8 @@ def store():
             
                 if money_count >= cost_1: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_1), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_1)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -377,10 +371,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -405,9 +396,7 @@ def store():
                             
                 elif money_count < cost_1:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -417,14 +406,8 @@ def store():
             
                 if money_count >= cost_2: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_2), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_2)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -438,10 +421,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -466,9 +446,7 @@ def store():
                             
                 elif money_count < cost_2:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -479,14 +457,8 @@ def store():
             
                 if money_count >= cost_3: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_3), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_3)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -500,10 +472,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -528,9 +497,7 @@ def store():
                             
                 elif money_count < cost_3:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -540,14 +507,8 @@ def store():
             
                 if money_count >= cost_4: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_4), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_4)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -561,10 +522,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -589,9 +547,7 @@ def store():
                             
                 elif money_count < cost_4:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -601,14 +557,8 @@ def store():
             
                 if money_count >= cost_5: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_5), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_5)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -622,10 +572,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -650,9 +597,7 @@ def store():
                             
                 elif money_count < cost_5:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -662,14 +607,8 @@ def store():
             
                 if money_count >= cost_6: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_6), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_6)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -683,10 +622,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -711,9 +647,7 @@ def store():
                             
                 elif money_count < cost_6:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -723,14 +657,8 @@ def store():
             
                 if money_count >= cost_7: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_7), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_7)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -744,10 +672,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -772,9 +697,7 @@ def store():
                             
                 elif money_count < cost_7:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -784,14 +707,8 @@ def store():
             
                 if money_count >= cost_8: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_8), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_8)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -805,10 +722,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -833,9 +747,7 @@ def store():
                             
                 elif money_count < cost_8:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -845,14 +757,8 @@ def store():
             
                 if money_count >= cost_9: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_9), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_9)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -866,10 +772,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -894,9 +797,7 @@ def store():
                             
                 elif money_count < cost_9:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -906,14 +807,8 @@ def store():
             
                 if money_count >= cost_10: ### Does user have enough money?
                 
-                    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
-                    print('${:,.0f}'.format(cost_10), end='')
-                    print_slow(" are you sure you want to buy it?")
-                    print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    price_print(cost_10)
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to buy?
@@ -927,10 +822,7 @@ def store():
 
                             print_slow("Would you like to return to the main menu?")
                             print("")
-                            print_slow("1. Yes")
-                            print("")
-                            print_slow("2. No")
-                            print("")
+                            print_options_two()
                             user_input = input()
             
                             if user_input == '1':
@@ -955,9 +847,7 @@ def store():
                             
                 elif money_count < cost_10:
                 
-                    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
-                    time.sleep(.25)
-                    print("")
+                    insufficient_funds()
                     
                 else:
                 
@@ -995,10 +885,7 @@ def store():
                     print("")
                     print_slow("Would you still like to sell it to me?")
                     print("")
-                    print_slow("1. Yes")
-                    print("")
-                    print_slow("2. No")
-                    print("")
+                    print_options_two()
                     decision = input()
                     
                     if decision == '1': ### Does user really want to sell?
@@ -1038,10 +925,7 @@ def store():
                         print("")
                         print_slow("Would you still like to sell it to me?")
                         print("")
-                        print_slow("1. Yes")
-                        print("")
-                        print_slow("2. No")
-                        print("")
+                        print_options_two()
                         decision = input()
                         
                         if decision == '1': ### Does user really want to sell?
@@ -1081,10 +965,7 @@ def store():
                         print("")
                         print_slow("Would you still like to sell it to me?")
                         print("")
-                        print_slow("1. Yes")
-                        print("")
-                        print_slow("2. No")
-                        print("")
+                        print_options_two()
                         decision = input()
                         
                         if decision == '1': ### Does user really want to sell?
@@ -1124,10 +1005,7 @@ def store():
                         print("")
                         print_slow("Would you still like to sell it to me?")
                         print("")
-                        print_slow("1. Yes")
-                        print("")
-                        print_slow("2. No")
-                        print("")
+                        print_options_two()
                         decision = input()
                         
                         if decision == '1': ### Does user really want to sell?
@@ -1166,10 +1044,7 @@ def store():
                         print("")
                         print_slow("Would you still like to sell it to me?")
                         print("")
-                        print_slow("1. Yes")
-                        print("")
-                        print_slow("2. No")
-                        print("")
+                        print_options_two()
                         decision = input()
                         
                         if decision == '1': ### Does user really want to sell?
@@ -1229,6 +1104,44 @@ def print_slow(str):
         time.sleep(0.06)
         
 ### END OF print_slow() FUNCITON ----------------------------------------------------------------###
+
+
+### ------------------------------------------------------------------------------- ###
+### This function is designed to print the binary options choice yes and no for the user.
+
+def print_options_two():
+
+    print_slow("1. Yes")
+    print("")
+    print_slow("2. No")
+    print("")
+
+### END OF print_options_two() FUNCITON ----------------------------------------------------------------###
+
+
+### ------------------------------------------------------------------------------- ###
+### This function is designed to print the formatted cost of an item in the stores.
+
+def price_print(cost):
+
+    print_slow("That will be ") ### Print slow is a slow printing function to make the user experience better
+    print('${:,.0f}'.format(cost), end='')
+    print_slow(" are you sure you want to buy it?")
+    print("")
+
+### END OF price_print() FUNCITON ----------------------------------------------------------------###
+
+
+### ------------------------------------------------------------------------------- ###
+### This function is designed to print that the user has insufficient funds to buy item(s).
+
+def insufficient_funds():
+
+    print_slow("You dont have enough money to buy this item")  ### Inform user of insufficient funds. 
+    time.sleep(.25)
+    print("")
+
+### END OF price_print() FUNCITON ----------------------------------------------------------------###
 
 
 ### ------------------------------------------------------------------------------- ###
